@@ -1,0 +1,196 @@
+header {
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+}
+.brand {
+    float: left;
+    margin: 3px 10%;
+    font-size: 30px;
+    justify-self: flex-start;
+    font-size: 2rem;
+    text-shadow: 0 0 .5rem red;
+}
+.brand span {
+    color: goldenrod;
+    text-shadow: 0 0 .5rem red;
+}
+.menu {
+    float: right;
+    margin: 10px 10% 0 10%;
+    font-size: 30px;
+    justify-self: flex-end;
+}
+.container {
+    margin-top: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+  
+.bar1, .bar2, .bar3 {
+    width: 45px;
+    height: 4px;
+    border-radius: 1rem;
+    background-color: goldenrod;
+    text-shadow: 0 0 .5rem red;
+    margin: 8px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+nav {
+    top: 4.1rem;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    transition: .5s;
+    opacity: 0;
+}
+nav.hide {
+    width: 0;
+}
+nav.show {
+    width: 100%;
+}
+nav ul {
+    float: right;
+    display: flex;
+    padding: 0 15%;
+    flex-direction: row;
+}
+nav ul li {
+    width: 4rem;
+    margin: 10px;
+    padding: 3px 6px;
+    list-style: none;
+    transition: .5s;
+    text-align: center;
+    box-shadow: 0 0 2px gold;
+}
+nav ul li:hover {
+    box-shadow: 0 0 6px gold;
+}
+
+main {
+    padding: 10rem 10% 0 10%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+section {
+    display: grid;
+}
+
+section .home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+section .about {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    gap: 2rem;
+    justify-content: space-between;
+}
+.tech-bars {
+    margin: 0;
+    padding: 0;
+}
+.tech-bar {
+    padding: 0 .2rem;
+    margin: .3rem;
+    font-size: .8rem;
+    border: .05rem solid gold;
+    box-shadow: 0 0 1rem green;
+    background-color: rgba(0, 128, 0, 0.6);
+}
+.tech-bar span {
+    width: 20%;
+}
+
+
+footer {
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    background:rgba(0, 0, 0, 0.8);
+}
+
+/*--- Responsive Design ---*/
+@media (max-width: 1680px) {
+    
+}
+@media (max-width: 1280px) {
+    
+}
+@media (max-width: 1024px) {
+    .brand {
+        margin: 10px 5%;
+    }
+    .menu {
+        margin: 10px 5% 0 5%;
+    }
+
+    main {
+        padding: 8rem 5%;
+    }
+    
+}
+@media (max-width: 768px) {
+    nav {
+        opacity: 0;
+    }
+}
+@media (max-width: 600px) {
+    nav {
+        height: 100%;
+    }
+    
+    nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul li {
+        width: 10rem;
+    }
+    main {
+        padding: 6rem 5%;
+    }
+
+}
+@media (max-width: 480px) {
+    .brand {
+        font-size: 35px;
+    }
+    .menu {
+        font-size: 20px;
+    }
+    section .about {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: space-between;
+    }
+}
+@media (max-width: 320px) {
+    
+}
+
+@media (max-width: 280px) {
+    .brand {
+        font-size: 15px;
+    }
+    .menu {
+        font-size: 15px;
+    }
+}

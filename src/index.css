@@ -1,0 +1,123 @@
+@font-face {
+  font-family: 'Caliche DEMO'; /* Name your font family */
+  src: url('./assets/Caliche\ DEMO.otf'); /* Locate the .ttf file within your directory*/
+}
+@font-face {
+  font-family: 'BlackRocker'; /* Name your font family */
+  src: url('./assets/BlackRocker\ .ttf'); /* Locate the .ttf file within your directory*/
+}
+:root {
+  margin: 0;
+  padding: 0;
+  font-family: 'BlackRocker', 'arial-bold';
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: silver;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: silver;
+  scroll-behavior: smooth;
+  scrollbar-width: 0;    
+  background: url(./assets/main-bg.jpg) center fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'BlackRocker'; /* Use the font family */
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+a {
+  color: goldenrod;
+  text-decoration: none;
+  transition: .3s;
+  -webkit-tap-highlight-color: transparent;
+}
+a:hover {
+  color: gold;
+}
+.logo {
+  color: goldenrod;
+  font-size: 10rem;
+  text-shadow: 0 0 .5rem red;
+}
+.title {
+  font-size: 2.5rem;
+}
+.subtitle {
+  font-size: 2rem;
+}
+.author {
+  font-size: 1.5rem;
+}
+.btn {
+  margin: 2rem 0;
+  font-size: 1.3rem;
+}
+.btn-info {
+  padding: .15rem .5rem;
+  border: .05rem solid goldenrod;
+  background-color: rgba(255, 238, 0, 0.07);
+}
+.btn-info:hover {
+  box-shadow: .05rem .05rem .5rem gold ;
+}
+
+/*--- Responsive Design ---*/
+@media (max-width: 1680px) {
+    
+}
+@media (max-width: 1280px) {
+    
+}
+@media (max-width: 1024px) {
+    
+}
+@media (max-width: 768px) {
+  .logo {
+    font-size: 10rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .subtitle {
+    font-size: 1.5rem;
+  }
+  .author {
+    font-size: 1.3rem;
+  }
+  .btn {
+    margin: 2rem 0;
+    font-size: 1.3rem;
+  }
+  .btn-info {
+    padding: .15rem .5rem;
+    border: .05rem solid goldenrod;
+    background-color: rgba(255, 238, 0, 0.07);
+  }
+  .btn-info:hover {
+    box-shadow: .05rem .05rem .5rem gold ;
+  }
+}
+@media (max-width: 600px) {
+   
+}
+@media (max-width: 480px) {
+    
+}
+@media (max-width: 320px) {
+    
+}
+
+@media (max-width: 280px) {
+    
+}
+
